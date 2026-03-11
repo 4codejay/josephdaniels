@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Joseph Daniels - Creative Designer Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio of Joseph Daniels - Creative Designer specializing in Sports, Events, Food, and Real Estate Posters">
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+  <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='grad' x1='0%' y1='0%' x2='100%' y2='100%'><stop offset='0%' style='stop-color:%23000000;stop-opacity:1' /><stop offset='50%' style='stop-color:%23333333;stop-opacity:1' /><stop offset='100%' style='stop-color:%23000000;stop-opacity:1' /></linearGradient></defs><rect width='100' height='100' fill='url(%23grad)' rx='20'/><text x='50' y='70' font-family='Arial, sans-serif' font-size='50' font-weight='bold' fill='%23ffffff' text-anchor='middle'>JD</text></svg>">
+  <link rel="apple-touch-icon" href="./favicon.svg">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <!-- Animated Starry Background -->
+  <div class="stars-background" id="stars-background">
+    <div class="stars"></div>
+    <div class="stars2"></div>
+    <div class="stars3"></div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">Joseph Daniels</div>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-toggle" id="nav-toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-background"></div>
+    <div class="hero-content">
+      <div class="hero-image-wrapper">
+        <img src="./my picture.jpeg" alt="Joseph Daniels" class="hero-image">
+        <div class="hero-image-overlay"></div>
+      </div>
+      <h1 class="hero-title">
+        <span class="title-line">Joseph</span>
+        <span class="title-line">Daniels</span>
+      </h1>
+      <p class="hero-subtitle">Creative Designer & Visual Artist</p>
+      <div class="hero-description">
+        <p>Transforming ideas into compelling visual narratives across sports, events, food, and real estate</p>
+      </div>
+      <div class="hero-buttons">
+        <a href="#portfolio" class="btn btn-primary">View Portfolio</a>
+        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+      </div>
+      <div class="scroll-indicator">
+        <div class="mouse">
+          <div class="wheel"></div>
+        </div>
+        <div class="arrow">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">About Me</span>
+        <h2 class="section-title">Creative Visionary</h2>
+      </div>
+      <div class="about-content">
+        <div class="about-text">
+          <p class="lead">Welcome to my creative portfolio. I specialize in designing compelling visual content that tells stories and captivates audiences.</p>
+          <p>With a passion for visual storytelling and attention to detail, I create designs that resonate across multiple categories. Each project is crafted with precision, creativity, and a deep understanding of the target audience.</p>
+          <div class="about-stats">
+            <div class="stat-item">
+              <div class="stat-number" data-target="71">0</div>
+              <div class="stat-label">Projects Completed</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number" data-target="20">0</div>
+              <div class="stat-label">Satisfied Clients</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number" data-target="3">0</div>
+              <div class="stat-label">Years Experience</div>
+            </div>
+          </div>
+        </div>
+        <div class="about-skills">
+          <h3>Specializations</h3>
+          <div class="skills-grid">
+            <div class="skill-item">
+              <i class="fas fa-futbol"></i>
+              <span>Sports Design</span>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-calendar-alt"></i>
+              <span>Event Branding</span>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-utensils"></i>
+              <span>Food Marketing</span>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-building"></i>
+              <span>Real Estate</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="portfolio">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">My Work</span>
+        <h2 class="section-title">Portfolio</h2>
+        <p class="section-description">Explore my creative work across different categories</p>
+      </div>
+
+      <!-- Filter Buttons -->
+      <div class="portfolio-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="sports">Sports</button>
+        <button class="filter-btn" data-filter="events">Events</button>
+        <button class="filter-btn" data-filter="food">Food</button>
+        <button class="filter-btn" data-filter="realestate">Real Estate</button>
+      </div>
+
+      <!-- Portfolio Grid -->
+      <div class="portfolio-grid">
+        <!-- Sports Posters -->
+        <div class="portfolio-item" data-category="sports">
+          <div class="portfolio-card">
+            <div class="portfolio-image-wrapper">
+              <img src="./sports poster.jfif" alt="Sports Poster" class="portfolio-image">
+              <div class="portfolio-overlay">
+                <div class="portfolio-info">
+                  <h3>Sports Poster</h3>
+                  <p>Dynamic Design</p>
+                  <button class="portfolio-btn" data-image="./sports poster.jfif">
+                    <i class="fas fa-expand"></i> View
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Event Posters -->
+        <div class="portfolio-item" data-category="events">
+          <div class="portfolio-card">
+            <div class="portfolio-image-wrapper">
+              <img src="./event.avif" alt="Event Poster" class="portfolio-image" onerror="this.src='./Where youth voices connect.png'">
+              <div class="portfolio-overlay">
+                <div class="portfolio-info">
+                  <h3>Event Poster</h3>
+                  <p>Youth Voices Connect</p>
+                  <button class="portfolio-btn" data-image="./event.avif" data-fallback="./Where youth voices connect.png">
+                    <i class="fas fa-expand"></i> View
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Food Posters -->
+        <div class="portfolio-item" data-category="food">
+          <div class="portfolio-card">
+            <div class="portfolio-image-wrapper">
+              <img src="./burger.png" alt="Food Poster" class="portfolio-image">
+              <div class="portfolio-overlay">
+                <div class="portfolio-info">
+                  <h3>Food Poster</h3>
+                  <p>Appetizing Design</p>
+                  <button class="portfolio-btn" data-image="./burger.png">
+                    <i class="fas fa-expand"></i> View
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Real Estate -->
+        <div class="portfolio-item" data-category="realestate">
+          <div class="portfolio-card">
+            <div class="portfolio-image-wrapper">
+              <img src="./real estate.jfif" alt="Real Estate" class="portfolio-image">
+              <div class="portfolio-overlay">
+                <div class="portfolio-info">
+                  <h3>Real Estate</h3>
+                  <p>Property Showcase</p>
+                  <button class="portfolio-btn" data-image="./real estate.jfif">
+                    <i class="fas fa-expand"></i> View
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Get In Touch</span>
+        <h2 class="section-title">Let's Work Together</h2>
+        <p class="section-description">Have a project in mind? I'd love to hear from you</p>
+      </div>
+      <div class="contact-content">
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="contact-details">
+              <h3>Email</h3>
+              <p>josephdaniels010@gmail.com</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-phone"></i>
+            </div>
+            <div class="contact-details">
+              <h3>Phone</h3>
+              <p>+254107816441</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="contact-details">
+              <h3>Location</h3>
+              <p>Available Worldwide</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <p>&copy; 2025 Joseph Daniels. All rights reserved.</p>
+        <div class="social-links">
+          <a href="https://www.instagram.com/josephdaniels._/?__pwa=1#" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://wa.me/254107816441" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          <a href="https://www.reddit.com/user/AppropriateLab4253/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button" target="_blank" rel="noopener noreferrer" aria-label="Reddit"><i class="fab fa-reddit"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox Modal -->
+  <div class="lightbox" id="lightbox">
+    <div class="lightbox-content">
+      <span class="lightbox-close" id="lightbox-close">&times;</span>
+      <img src="" alt="Portfolio Image" id="lightbox-image">
+      <button class="lightbox-prev" id="lightbox-prev">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+      <button class="lightbox-next" id="lightbox-next">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src='https://assets.codepen.io/16327/gsap-latest-beta.min.js'></script>
+  <script src='https://assets.codepen.io/16327/ScrollTrigger.min.js'></script>
+  <script src="./script.js"></script>
+</body>
+
+</html>
+
